@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="basis|Android">
-      <Configuration>basis</Configuration>
+    <ProjectConfiguration Include="debug|Android">
+      <Configuration>debug</Configuration>
       <Platform>Android</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="memdleak|Android">
@@ -17,12 +17,12 @@
       <Configuration>profiler</Configuration>
       <Platform>Android</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="stage|Android">
-      <Configuration>stage</Configuration>
+    <ProjectConfiguration Include="release|Android">
+      <Configuration>release</Configuration>
       <Platform>Android</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="static_basis|Android">
-      <Configuration>static_basis</Configuration>
+    <ProjectConfiguration Include="static_debug|Android">
+      <Configuration>static_debug</Configuration>
       <Platform>Android</Platform>
     </ProjectConfiguration>
   </ItemGroup>
@@ -38,16 +38,16 @@
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='memdleak|Android'">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
   </PropertyGroup>
-  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='static_basis|Android'">
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='static_debug|Android'">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='no_precompiled_header|Android'">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
   </PropertyGroup>
-  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='stage|Android'">
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='release|Android'">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
   </PropertyGroup>
-  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='basis|Android'">
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='debug|Android'">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <AndroidAPILevel>android-19</AndroidAPILevel>
   </PropertyGroup>
@@ -58,33 +58,33 @@
   <PropertyGroup>
     <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='basis|Android'">
-    <OutDir>$(SolutionDir)..\..\..\stage\$(PlatformName)\</OutDir>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Android'">
+    <OutDir>$(SolutionDir)..\..\..\release\$(PlatformName)\</OutDir>
     <IntDir>$(SolutionDir)..\..\..\time\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <TargetName>lib$(ProjectName)</TargetName>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='static_basis|Android'">
-    <OutDir>$(SolutionDir)..\..\..\stage\$(PlatformName)\</OutDir>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='static_debug|Android'">
+    <OutDir>$(SolutionDir)..\..\..\release\$(PlatformName)\</OutDir>
     <IntDir>$(SolutionDir)..\..\..\time\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <TargetName>lib$(ProjectName)</TargetName>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='stage|Android'">
-    <OutDir>$(SolutionDir)..\..\..\stage\$(PlatformName)\</OutDir>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Android'">
+    <OutDir>$(SolutionDir)..\..\..\release\$(PlatformName)\</OutDir>
     <IntDir>$(SolutionDir)..\..\..\time\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <TargetName>lib$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='profiler|Android'">
-    <OutDir>$(SolutionDir)..\..\..\stage\$(PlatformName)\</OutDir>
+    <OutDir>$(SolutionDir)..\..\..\release\$(PlatformName)\</OutDir>
     <IntDir>$(SolutionDir)..\..\..\time\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <TargetName>lib$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='memdleak|Android'">
-    <OutDir>$(SolutionDir)..\..\..\stage\$(PlatformName)\</OutDir>
+    <OutDir>$(SolutionDir)..\..\..\release\$(PlatformName)\</OutDir>
     <IntDir>$(SolutionDir)..\..\..\time\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <TargetName>lib$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='no_precompiled_header|Android'">
-    <OutDir>$(SolutionDir)..\..\..\stage\$(PlatformName)\</OutDir>
+    <OutDir>$(SolutionDir)..\..\..\release\$(PlatformName)\</OutDir>
     <IntDir>$(SolutionDir)..\..\..\time\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <TargetName>lib$(ProjectName)</TargetName>
   </PropertyGroup>
@@ -98,7 +98,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(ProjectDir);$(ProjectDir)libcharset/include</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='static_basis|Android'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='static_debug|Android'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(ProjectDir);$(ProjectDir)libcharset/include</AdditionalIncludeDirectories>
     </ClCompile>
@@ -108,12 +108,12 @@
       <AdditionalIncludeDirectories>$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(ProjectDir);$(ProjectDir)libcharset/include</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='stage|Android'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Android'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(ProjectDir);$(ProjectDir)libcharset/include</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='basis|Android'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|Android'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(ProjectDir);$(ProjectDir)libcharset/include</AdditionalIncludeDirectories>
     </ClCompile>

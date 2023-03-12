@@ -1,1 +1,0 @@
-C:\basis\source\third\iconv\time-android\intermediate\x86\Debug\iconv\libauraiconv.so

@@ -723,4 +723,9 @@
       <Filter>Source Files\lib</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="iconv.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>

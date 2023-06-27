@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8b348e8d-73d3-442c-aaf2-fe3bba2560bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3727bc0f-31b3-4fff-b691-a9b16687ca01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib">
+      <UniqueIdentifier>{8d68cc67-8064-4b3a-bd0a-6ff52219a50b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libcharset">
+      <UniqueIdentifier>{07173b2b-036f-4eda-9fe0-f4765087e3ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libcharset\llib">
+      <UniqueIdentifier>{0995eb73-cfab-4143-8ded-2c1cffd70fdb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bzlib_private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\operating_system\operating_system-windows\configuration\unac\config.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\operating_system\operating_system-windows\configuration\iconv\config.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="lib\iconv.c">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="libcharset\lib\localcharset.c">
+      <Filter>Source Files\libcharset\llib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\relocatable.c">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

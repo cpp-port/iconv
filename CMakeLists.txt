@@ -296,4 +296,5 @@ list(APPEND library_include_directories ${CMAKE_CURRENT_SOURCE_DIR}/../../../ope
 
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${library_include_directories})
+target_include_directories(static_${PROJECT_NAME} PRIVATE ${library_include_directories})
 

@@ -215,9 +215,7 @@
     <OutDir>$(RootParentDirOperatingSystem)storage-windows\$(PlatformName)\$(Configuration)\third\library\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <Link>
-      <ModuleDefinitionFile>$(ProjectName).def</ModuleDefinitionFile>
-    </Link>
+    <Link />
     <ClCompile>
       <AdditionalIncludeDirectories>$(ProjectDir)lib;$(ProjectDir)srclib;$(SolutionDir)../port/include;$(SolutionDir)../operating_system/operating_system-windows/configuration;$(SolutionDir)../operating_system/operating_system-windows/configuration/$(RootNamespace);$(SolutionDir)../operating_system/operating_system-windows/include;$(ProjectDir)/include/$(RootNamespace);$(ProjectDir)/include;$(ProjectDir);$(SolutionDir)../include</AdditionalIncludeDirectories>
     </ClCompile>
@@ -232,9 +230,7 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <Link>
-      <ModuleDefinitionFile>$(ProjectName).def</ModuleDefinitionFile>
-    </Link>
+    <Link />
     <ClCompile>
       <AdditionalIncludeDirectories>$(ProjectDir)lib;$(ProjectDir)srclib;$(SolutionDir)../port/include;$(SolutionDir)../operating_system/operating_system-windows/configuration;$(SolutionDir)../operating_system/operating_system-windows/configuration/$(RootNamespace);$(SolutionDir)../operating_system/operating_system-windows/include;$(ProjectDir)/include/$(RootNamespace);$(ProjectDir)/include;$(ProjectDir);$(SolutionDir)../include</AdditionalIncludeDirectories>
     </ClCompile>
@@ -260,17 +256,13 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <Link>
-      <ModuleDefinitionFile>$(ProjectName).def</ModuleDefinitionFile>
-    </Link>
+    <Link />
     <ClCompile>
       <AdditionalIncludeDirectories>$(ProjectDir)lib;$(ProjectDir)srclib;$(SolutionDir)../port/include;$(SolutionDir)../operating_system/operating_system-windows/configuration;$(SolutionDir)../operating_system/operating_system-windows/configuration/$(RootNamespace);$(SolutionDir)../operating_system/operating_system-windows/include;$(ProjectDir)/include/$(RootNamespace);$(ProjectDir)/include;$(ProjectDir);$(SolutionDir)../include</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
-    <Link>
-      <ModuleDefinitionFile>$(ProjectName).def</ModuleDefinitionFile>
-    </Link>
+    <Link />
     <ClCompile>
       <AdditionalIncludeDirectories>$(ProjectDir)lib;$(ProjectDir)srclib;$(SolutionDir)../port/include;$(SolutionDir)../operating_system/operating_system-windows/configuration;$(SolutionDir)../operating_system/operating_system-windows/configuration/$(RootNamespace);$(SolutionDir)../operating_system/operating_system-windows/include;$(ProjectDir)/include/$(RootNamespace);$(ProjectDir)/include;$(ProjectDir);$(SolutionDir)../include</AdditionalIncludeDirectories>
       <BufferSecurityCheck>false</BufferSecurityCheck>
@@ -297,16 +289,13 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <Link>
-      <ModuleDefinitionFile>$(ProjectName).def</ModuleDefinitionFile>
-    </Link>
+    <Link />
     <ClCompile>
       <AdditionalIncludeDirectories>$(ProjectDir)lib;$(ProjectDir)srclib;$(SolutionDir)../port/include;$(SolutionDir)../operating_system/operating_system-windows/configuration;$(SolutionDir)../operating_system/operating_system-windows/configuration/$(RootNamespace);$(SolutionDir)../operating_system/operating_system-windows/include;$(ProjectDir)/include/$(RootNamespace);$(ProjectDir)/include;$(ProjectDir);$(SolutionDir)../include</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <Link>
-      <ModuleDefinitionFile>$(ProjectName).def</ModuleDefinitionFile>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
     </Link>
     <ClCompile>

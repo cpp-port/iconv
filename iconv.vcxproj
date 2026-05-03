@@ -219,6 +219,8 @@
     <ClCompile>
       <AdditionalIncludeDirectories>$(ProjectDir)lib;$(ProjectDir)srclib;$(SolutionDir)../port/include;$(SolutionDir)../operating_system/operating_system-windows/configuration;$(SolutionDir)../operating_system/operating_system-windows/configuration/$(RootNamespace);$(SolutionDir)../operating_system/operating_system-windows/include;$(ProjectDir)/include/$(RootNamespace);$(ProjectDir)/include;$(ProjectDir);$(SolutionDir)../include</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link />
+    <Link />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='StaticRelease|Win32'">
     <Link>
@@ -234,6 +236,8 @@
     <ClCompile>
       <AdditionalIncludeDirectories>$(ProjectDir)lib;$(ProjectDir)srclib;$(SolutionDir)../port/include;$(SolutionDir)../operating_system/operating_system-windows/configuration;$(SolutionDir)../operating_system/operating_system-windows/configuration/$(RootNamespace);$(SolutionDir)../operating_system/operating_system-windows/include;$(ProjectDir)/include/$(RootNamespace);$(ProjectDir)/include;$(ProjectDir);$(SolutionDir)../include</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link />
+    <Link />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='StaticDebug|Win32'">
     <Link>
@@ -260,6 +264,8 @@
     <ClCompile>
       <AdditionalIncludeDirectories>$(ProjectDir)lib;$(ProjectDir)srclib;$(SolutionDir)../port/include;$(SolutionDir)../operating_system/operating_system-windows/configuration;$(SolutionDir)../operating_system/operating_system-windows/configuration/$(RootNamespace);$(SolutionDir)../operating_system/operating_system-windows/include;$(ProjectDir)/include/$(RootNamespace);$(ProjectDir)/include;$(ProjectDir);$(SolutionDir)../include</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link />
+    <Link />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <Link />
@@ -268,6 +274,8 @@
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
+    <Link />
+    <Link />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='StaticRelease|x64'">
     <Link>
@@ -293,6 +301,8 @@
     <ClCompile>
       <AdditionalIncludeDirectories>$(ProjectDir)lib;$(ProjectDir)srclib;$(SolutionDir)../port/include;$(SolutionDir)../operating_system/operating_system-windows/configuration;$(SolutionDir)../operating_system/operating_system-windows/configuration/$(RootNamespace);$(SolutionDir)../operating_system/operating_system-windows/include;$(ProjectDir)/include/$(RootNamespace);$(ProjectDir)/include;$(ProjectDir);$(SolutionDir)../include</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link />
+    <Link />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <Link>

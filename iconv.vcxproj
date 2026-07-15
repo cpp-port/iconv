@@ -321,6 +321,9 @@
     </ClCompile>
     <Link />
     <Link />
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <Link />
@@ -331,6 +334,9 @@
     </ClCompile>
     <Link />
     <Link />
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='StaticRelease|x64'">
     <Link>
@@ -366,6 +372,9 @@
     </ClCompile>
     <Link />
     <Link />
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugAsan|x64'">
     <Link />
@@ -378,6 +387,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <Link>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <SubSystem>Windows</SubSystem>
     </Link>
     <ClCompile>
       <AdditionalIncludeDirectories>$(ProjectDir)lib;$(ProjectDir)srclib;$(SolutionDir)../port/include;$(SolutionDir)../operating_system/operating_system-windows/configuration;$(SolutionDir)../operating_system/operating_system-windows/configuration/$(RootNamespace);$(SolutionDir)../operating_system/operating_system-windows/include;$(ProjectDir)/include/$(RootNamespace);$(ProjectDir)/include;$(ProjectDir);$(SolutionDir)../include</AdditionalIncludeDirectories>

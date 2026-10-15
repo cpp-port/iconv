@@ -1,6 +1,21 @@
 cmake_minimum_required(VERSION 3.16)
 project(iconv C)
 
+if(__REACTOS__)
+    file(GENERATE OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/config.h" CONTENT "#pragma once\n#include <stddef.h>\n#include <stdint.h>\n#define _(text) (text)\nchar *str_iconv(const char *, const char *, const char *);\n#define HAVE_ICONV 1\n#define ICONV_CONST\n#define HAVE_STDINT_H 1\n#define HAVE_STRING_H 1\n#define HAVE_STDLIB_H 1\n#define HAVE_LOCALE_H 1\n#define c_strcasecmp _stricmp\n#define c_strncasecmp _strnicmp\n#define _GL_ATTRIBUTE_PURE\n#define _GL_ATTRIBUTE_CONST\n")
+    file(GENERATE OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/configmake.h" CONTENT "#define LIBDIR \".\"\n")
+    add_library(iconv SHARED lib/iconv.c libcharset/lib/localcharset.c)
+    target_include_directories(iconv PRIVATE "${CMAKE_CURRENT_BINARY_DIR}" "${CMAKE_CURRENT_SOURCE_DIR}/include" "${CMAKE_CURRENT_SOURCE_DIR}/libcharset/include")
+    set_target_properties(iconv PROPERTIES PREFIX "" WINDOWS_EXPORT_ALL_SYMBOLS ON)
+    if(MINGW)
+        target_link_options(iconv PRIVATE -static-libgcc)
+    endif()
+    install(TARGETS iconv RUNTIME DESTINATION binary ARCHIVE DESTINATION library)
+    install(FILES "${CMAKE_CURRENT_SOURCE_DIR}/include/iconv.h" DESTINATION include)
+
+    return()
+endif()
+
 
 list(APPEND library_source
 include/iconv.h

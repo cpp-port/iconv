@@ -339,10 +339,13 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link />
+<<<<<<< Updated upstream
     <Link />
     <Link>
       <SubSystem>Windows</SubSystem>
     </Link>
+=======
+>>>>>>> Stashed changes
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='StaticRelease|x64'">
     <Link>
